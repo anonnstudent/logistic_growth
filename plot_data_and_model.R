@@ -1,6 +1,6 @@
 #Script to plot data and model
 
-growth_data <- read.csv("???")
+growth_data <- read.csv("experiment1.csv")
 
 logistic_fun <- function(t) {
   
@@ -10,18 +10,24 @@ logistic_fun <- function(t) {
   
 }
 
-N0 <- ??? #
+exp(6.903e+00)
+N0 <- 995.256 #the intercept of model1 linear model is ln(N0),this is done by exp(???)
   
-r <- ??? #
+r <- 9.990e-03 #this is t from the first model (model1)
   
-K <- ??? #
+K <- 5.998e+10 #this is the intercept of second odel
 
-ggplot(aes(???,???), data = growth_data) +
+ggplot(aes(t,N), data = growth_data) +
   
   geom_function(fun=logistic_fun, colour="red") +
   
-  geom_point()
+  geom_point() 
 
   #scale_y_continuous(trans='log10')
+
+
+
+sessionInfo()
+sink()
 
 
