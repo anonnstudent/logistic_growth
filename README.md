@@ -83,7 +83,7 @@ K <- 6.00e+10
 
 ## Question 3 from assignment 
 
-I also dont understand this question 
+look at code 
 
 
 
