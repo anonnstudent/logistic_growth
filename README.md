@@ -26,7 +26,7 @@ size of E. coli within this environment at a given time ( *t* ). This
 equation is the solution to a differential equation that describes
 logistic growth.
 
-*N(t) = ( K N0 e^rt^ ) / ( K - N0 + N0 e^rt^ )*
+*N(t) = ( K N0 e^rt ) / ( K - N0 + N0 e^rt^ )*
 
 As plotting this *E. coli* growth data produces a sigmoidal curve, it is
 harder to obtain the parameters of the population as more complex
