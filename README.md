@@ -50,7 +50,7 @@ The results obtained from this analysis are as follows:
 
 N[0] <- 995.256
 r <- 9.990e-03
-K <- 5.998e+10
+K <- 6.00e+10
 
 - exaplain how these are obtained from output
 - include lnN0
@@ -59,16 +59,23 @@ K <- 5.998e+10
 
 ## Question 2 from assignment 
 
+**Exponential growth**
+
 *N(t) = N[0]e^rt*
 
-995.256 * e^(9.990e-03*4980) = 
+*N(4980)* = 995.256 * e^(9.990e-03*4980) = 4.019501e+24
 
-*ln(N) = ln(N[0]) + rt*
+*N(4980)* = 4.019501e+24
 
-ln(N[0[) = 6.903e+00
-6.903e+00 + (9.990e-03 * 4980)
+**Logistic growth**
 
-I actually do not understand this question. 
+- put equation here
+
+*N(4980)* = (6.00e+10 * 995.256 * exp(9.990e-03*4980)) / 
+            (6.00e+10 - 995.256 + (995.256 * exp(9.990e-03*4980))) = 6e+10
+
+*N(4980)* = 6e+10
+
 
 
 ## Question 3 from assignment 
