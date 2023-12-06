@@ -37,11 +37,24 @@ To estimate values of *K*, a linear model can be applied to the later time point
 
 The data analysed is taken from the dataset **experiment1.csv**. To apply these linear models, this data first had to be subsetted into time points showing exponential and constant growth in the sigmoidal curve. The code to do this and fit the models is shown below:
 
+**Positive linear relationship**
+data_subset1 <- growth_data %>% filter(t<1600) %>% mutate(N_log = log(N))
+model1 <- lm(N_log ~ t, data_subset1)
 
+**Constant growth**
+data_subset2 <- growth_data %>% filter(t>2500)
+model2 <- lm(N ~ 1, data_subset2)
+
+
+The results obtained from this analysis are as follows:
 
 N[0] <- 995.256
 r <- 9.990e-03
 K <- 5.998e+10
+
+- exaplain how these are obtained from output
+- include lnN0
+- ????
 
 
 ## Question 2 from assignment 
