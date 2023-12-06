@@ -144,3 +144,8 @@ of resources meaning they become limiting at a later time point.
 
 
 ## Question 3 - graph comparing exponential and logistic growth curves
+
+
+<img width="712" alt="Screenshot 2023-12-06 at 16 55 38" src="https://github.com/rosienp/logistic_growth/assets/150166627/20b16a53-2083-4c37-9a58-272f82bb2de9">
+
+
