@@ -17,7 +17,7 @@ summary(model1)
 
 #Case 2. N(t) = K
 
-data_subset2 <- growth_data %>% filter(t>2250)
+data_subset2 <- growth_data %>% filter(t>2500)
 
 model2 <- lm(N ~ 1, data_subset2)
 summary(model2)

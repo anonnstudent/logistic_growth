@@ -15,15 +15,15 @@ N0 <- 995.256 #the intercept of model1 linear model is ln(N0),this is done by ex
   
 r <- 9.990e-03 #this is t from the first model (model1)
   
-K <- 5.998e+10 #this is the intercept of second odel
+K <- 6.00e+10 #this is the intercept of second odel
 
 ggplot(aes(t,N), data = growth_data) +
   
   geom_function(fun=logistic_fun, colour="red") +
   
-  geom_point() 
+  geom_point() #+
 
-  #scale_y_continuous(trans='log10')
+  scale_y_continuous(trans='log10')
 
 
 
