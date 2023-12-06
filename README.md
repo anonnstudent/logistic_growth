@@ -1,10 +1,5 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Logistic growth
+
 
 ## Question 1 - analysis write up
 
@@ -18,6 +13,7 @@ shape. The observed constant population size is the maximum *E. coli*
 population size that can be sustained with the resources present in the
 culturing environment, this is known as the carrying capacity.
 
+
 From this analysis of this data, parameters of the population are
 estimated, including the initial population size of the bacteria (
 *N0* ), rate of growth ( *r* ) and carrying capacity ( *K* ). These
@@ -27,6 +23,7 @@ equation is the solution to a differential equation that describes
 logistic growth.
 
 *N(t) = ( K N0 e^rt ) / ( K - N0 + N0 e^rt )*
+
 
 As plotting this *E. coli* growth data produces a sigmoidal curve, it is
 harder to obtain the parameters of the population as more complex
@@ -39,6 +36,7 @@ this constant population size. By applying linear models to the linear
 relationships of this log-transformed data, estimates for the population
 parameters mentioned above can be obtained.
 
+
 To estimate values of *N0* and *r*, a linear model can be applied to
 the early time points where this positive linear relationship is
 present. The linear approximation of the observed logistic growth that
@@ -48,6 +46,7 @@ is applied to this linear model is shown below:
 
 Due to this approximation, *N0* can be estimated as the y-intercept of
 the linear model, while *r* can be estimated from the slope of the line.
+
 
 To estimate values of *K*, a separate linear model can be applied to the
 later time points where this constant population size is present. The
@@ -59,6 +58,8 @@ this linear model is shown below:
 Due to this approximation, *K* can be estimated as the y-intercept of this
 linear model.
 
+
+
 ### Results
 
 The data analysed is taken from the dataset **"experiment1.csv"**. To
@@ -66,11 +67,13 @@ apply the linear models to the data, it first had to be subsetted into
 the appropriate time points showing exponential and constant growth
 within the logistic growth curve. The code to do this subsetting and apply the linear models is shown below:
 
+
 **Exponential growth**
 
 -   data_subset1 \<- growth_data %\>%filter(t\<1600) %\>% mutate(N_log = log(N))
 
 -   model1 \<- lm(N_log \~ t, data_subset1)
+
 
 **Constant growth**
 
@@ -91,7 +94,10 @@ The value for N0 had to be obtained by using the function "exp()" on
 the y-intercept from model1, as it log transformed: ***ln*(N0)** =
 6.903e+00
 
-## Question 2 - calculating exponential growth and comparison to logistic groth
+
+
+## Question 2 - calculating exponential growth and comparison to logistic growth
+
 
 **Exponential growth**
 
@@ -104,6 +110,7 @@ taking place:
 *N(4980)* = 995.256 \* e^(9.990e-03 \* 4980) = 4.019501e+24
 
 *N(4980)* = 4.019501e+24
+
 
 **Logistic growth**
 
@@ -121,6 +128,7 @@ Or can be calculated using the solution logistic growth equation:
 
 *N(4980)* = 6e+10
 
+
 The number of cells present at ***t** = 4980* assuming exponential
 growth (*N(4980)* = 4.019501e+24), is much greater than than the
 number observed under logistic growth (*N(4980)* = 6e+10). This is
@@ -133,5 +141,6 @@ limiting and so prevented the further growth of the population. However,
 it is possible to achieve exponential growth for this longer period of
 time in different culturing environment, where there is a greater excess
 of resources meaning they become limiting at a later time point.
+
 
 ## Question 3 - graph comparing exponential and logistic growth curves
