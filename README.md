@@ -7,26 +7,37 @@
 
 
 ## Analysis 
-This is an analysis of data on the number of *Escherichia coli* present within a culture each hour during its growth.
-This  is an analysis of data on *Escherichia coli*, which consists of the number of cells each hour during its culturing. 
-During the experiment, the population of *E.coli* grows exponentially but then this slows and reaches an equilibrium (carrying capacity). From this analysis of this data, the initial population size of the bacteria (*N[0]*). rate of growth (*r*) and carrying capacity (*K*) can be estimated which can be used (WITHIN THE BELOW EQUATION) to find the population size at a given time (*t*).
+This repository is an analysis of  *Escherichia coli* growth data, which consists of observations of the number of cells present each hour during its culturing period. During the experiment, the population of *E.coli* initially grows exponentially but then this growth slows and reaches an equilibrium, known as the carrying capacity. 
 
+- explain what carrying capacity is, what causes it  
 
-To estimate *N[0]* and *r* the linear approximation below can be used:
+From this analysis of this data, the initial population size of the bacteria (*N[0]*), rate of growth (*r*) and carrying capacity (*K*) can be estimated which can be used (WITHIN THE BELOW EQUATION) to find the population size at a given time (*t*).
 
-(when K is greater than N[0] and t is small then the population will grow exponentially)
+- include logistic growth equation
 
+This is the solution of Lotka-Voltera model/logistic growth - FACT CHECK and EXPLAIN what this means and how relates. 
 
-- this sigmodal curve from growth can be linearised by log transforming number of cells (y-axis) - gives linear relationship at early time points in experiment and the a constant at later time points.
-- Using this can find these parameters from the data
+The growth of *E.coli* when plotted produces a sigmoidal curve showing this exponential growth which eventually decreases and levels off to a constant population size. By log-transforming the data of the number of cells observed (y-axis) to produce a semi-log plot, this growth can be observed in linear relationships instead. Here, the early time points where there is exponential growth show a positive linear relationship and later time points where there is no population growth show this constant population size. By applying linear models to these observed relationships within this semi-log plot, estimates for the population parameters mentioned above can be obtained. 
 
-- fitting a linear model to the early time points can find N0 and r
-- fitting a linear model to the later time points to find t 
+To estimate values of *N[0]* and *r*, a linear model can be applied to the early time points where this positive linear relationship is present. The linear approximation of the observed logistic growth to this model to estimate these parameters is below:
+
+*ln(N) = ln(N0) + rt*
+
+- explain this
+
+To estimate values of *K*, a linear model can be applied to the later time points where this constant population size is present. The linear approximation of the observed logistic growth applied to the model to estimate this parameter is below:
+
+*N(t) = K + 0 · t*
+
+- explain this
+
 
 
 ### Results
 
-Using data from experiment1.csv, the results from the analysis above are as follows:
+The data analysed is taken from the dataset **experiment1.csv**. To apply these linear models, this data first had to be subsetted into time points showing exponential and constant growth in the sigmoidal curve. The code to do this and fit the models is shown below:
+
+
 
 N[0] <- 995.256
 r <- 9.990e-03
