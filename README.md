@@ -7,7 +7,9 @@
 
 
 ## Analysis 
-This ___ is an analysis of data of the number of *Escherichia coli* present within a culture each hour during its growth. During the experiment, the population of *E.coli* grows exponentially but then this slows and reaches an equilibrium (carrying capacity). From this analysis of this data, the initial population size of the bacteria (*N[0]*). rate of growth (*r*) and carrying capacity (*K*) can be estimated which can be used (WITHIN THE BELOW EQUATION) to find the population size at a given time (*t*).
+This is an analysis of data on the number of *Escherichia coli* present within a culture each hour during its growth.
+This  is an analysis of data on *Escherichia coli*, which consists of the number of cells each hour during its culturing. 
+During the experiment, the population of *E.coli* grows exponentially but then this slows and reaches an equilibrium (carrying capacity). From this analysis of this data, the initial population size of the bacteria (*N[0]*). rate of growth (*r*) and carrying capacity (*K*) can be estimated which can be used (WITHIN THE BELOW EQUATION) to find the population size at a given time (*t*).
 
 
 To estimate *N[0]* and *r* the linear approximation below can be used:
