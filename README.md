@@ -77,6 +77,9 @@ K <- 6.00e+10
 *N(4980)* = 6e+10
 
 
+- exponential much higher than logistic
+- exponential not realistic, no density dependence in regards to resource use and carrying capacity. 
+
 
 ## Question 3 from assignment 
 
