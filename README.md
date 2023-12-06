@@ -87,8 +87,8 @@ The estimates obtained from this analysis are as follows:
 
 **K** = 6.00e+10
 
-The value for N~0~ had to be obtained by using the function "exp()" on
-the y-intercept from model1, as it log transformed: ***ln*****(N0)** =
+The value for N0 had to be obtained by using the function "exp()" on
+the y-intercept from model1, as it log transformed: ***ln*(N0)** =
 6.903e+00
 
 ## Question 2 - calculating exponential growth and comparison to logistic groth
@@ -99,7 +99,7 @@ Calculations to find the number of cells present at ***t** = 4980*
 (the last time point in the experiment) assuming exponential growth is
 taking place:
 
-*N(t) = N~0~ \* e^rt^*
+*N(t) = N0 \* e^rt*
 
 *N(4980)* = 995.256 \* e^(9.990e-03 \* 4980) = 4.019501e+24
 
@@ -114,7 +114,7 @@ taken from the data itself, as logistic growth is present:
 
 Or can be calculated using the solution logistic growth equation:
 
-*N(t)* = ( K N0 e^rt ) / ( K - N0 + N~0~ e^rt )*
+*N(t) = ( K N0 e^rt ) / ( K - N0 + N~0~ e^rt )*
 
 *N(4980)* = (6.00e+10 \* 995.256 \* e^(9.990e-03 \* 4980)) /
 (6.00e+10 - 995.256 + ( 995.256\* e^(9.990e-03 \* 4980))) = 6e+10
