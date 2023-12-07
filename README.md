@@ -18,7 +18,7 @@ From this analysis of this data, parameters of the population are
 estimated, including the initial population size of the bacteria (
 *N0* ), rate of growth ( *r* ) and carrying capacity ( *K* ). These
 parameters can be used in the following equation to find the population
-size of E. coli within this environment at a given time ( *t* ). This
+size of *E. coli* within this environment at a given time ( *t* ). This
 equation is the solution to a differential equation that describes
 logistic growth.
 
@@ -44,7 +44,7 @@ is applied to this linear model is shown below:
 
 *ln(N) = ln(N0) + rt*
 
-Due to this approximation, *N0* can be estimated as the y-intercept of
+Due to this approximation, *N0* can be estimated from the y-intercept of
 the linear model, while *r* can be estimated from the slope of the line.
 
 
